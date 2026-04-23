@@ -1,0 +1,1053 @@
+element1:
+  name: Avoid use of system:masters group (Manual)
+  requirements:
+  - Manual
+element2:
+  name: Prefer using dedicated EKS Service Accounts (Manual)
+  requirements:
+  - Manual
+element3:
+  name: Configure Data Access Control Lists
+  requirements:
+  - v7
+  - 5.2 Maintain Secure Images
+element4:
+  name: Ensure that the kubelet configuration file ownership is set to root:root
+  requirements:
+  - Manual
+element5:
+  name: 'Default Value: See the AWS EKS documentation for the default value.'
+  requirements:
+  - AWS EKS documentation
+element6:
+  name: 'Audit: First, SSH to the relevant worker node: To check to see if the Kubelet
+    Service is running: sudo systemctl status kubelet'
+  requirements:
+  - SSH
+  - Systemctl
+element7:
+  name: 'Remediation: Run the following command (using the config file location identified
+    in the Audit step)'
+  requirements:
+  - Config file location identified in the Audit step
+element8:
+  name: streamingConnectionIdleTimeout
+  requirements:
+  - 4h0m0s
+element9:
+  name: Protect Kernel Defaults
+  requirements:
+  - 'True'
+element10:
+  name: RotateKubeletServerCertificate
+  requirements:
+  - Automated
+  - 'true'
+element11:
+  name: RotateKubeletServerCertificate
+  requirements:
+  - 'True'
+element12:
+  name: cluster-admin
+  requirements:
+  - system:masters
+  - system:controller:clusterrole-aggregation-controller
+  - system:controller:clusterrole-
+  - system:controller:serviceAccount
+  - system:controller:kube-system
+  - system:controller:generic-garbage-collector
+  - system:controller:namespace-controller
+  - system:kube-controller-manager
+  - user
+element13:
+  name: system:masters
+  requirements:
+  - system:masters
+  - system:controller:clusterrole-aggregation-controller
+  - system:controller:clusterrole-
+  - system:controller:serviceAccount
+  - system:controller:kube-system
+  - system:controller:expand-controller
+  - system:controller:generic-garbage-collector
+  - system:controller:namespace-controller
+  - system:kube-controller-manager
+  - user
+element14:
+  name: system:controllers
+  requirements:
+  - system:controller:clusterrole-aggregation-controller
+  - system:controller:clusterrole-
+  - system:controller:serviceAccount
+  - system:controller:kube-system
+  - system:controller:expand-controller
+  - system:controller:generic-garbage-collector
+  - system:controller:namespace-controller
+  - system:kube-controller-manager
+  - user
+element15:
+  name: serviceAccount
+  requirements:
+  - serviceAccount
+  - kube-system
+  - user
+element16:
+  name: persistent-volume-binder
+  requirements:
+  - serviceAccount
+  - kube-system
+  - user
+element17:
+  name: namespace-controller
+  requirements:
+  - serviceAccount
+  - kube-system
+  - user
+element18:
+  name: generic-garbage-collector
+  requirements:
+  - user
+  - kube-system
+element19:
+  name: Administrative Account Token
+  requirements:
+  - 'False'
+element20:
+  name: Use Dedicated Administrative Accounts
+  requirements:
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+  - This account should only be used for administrative activities and not internet
+    browsing, email, or similar activities.
+  - Do not use numbers as requirements.
+  - Do not output lists of dictionaries.
+element21:
+  name: Encryption at Rest
+  requirements:
+  - server-side encryption
+  - secondary authentication mechanism
+element22:
+  name: Minimize Container Registries
+  requirements:
+  - Manual
+  - Approved container registries
+element23:
+  name: IAM Roles for Service Accounts
+  requirements:
+  - Manual approach for authenticating Kubernetes workloads running on Amazon EKS
+  - Dedicated Service account for each workload
+  - IAM roles for service accounts on Amazon EKS clusters
+  - Least privilege — By using the IAM roles for service accounts feature, you no
+    longer need to provide extended permissions to the worker node IAM role so that
+    pods on that node can call AWS APIs.
+  - Credential isolation — A container can only retrieve credentials for the IAM role
+    that is associated with the service account to which it belongs.
+  - Audit-ability — Access and event logging is available through CloudTrail to help
+    ensure retrospective auditing.
+element24:
+  name: Endpoint Private Access
+  requirements:
+  - Restrict Access to the Control Plane Endpoint (Manual)
+  - Enable Endpoint Private Access
+  - Limit the IP addresses that can access your API server from the internet
+  - Disable Internet Access to the API server
+element25:
+  name: Network-Based URL Filters
+  requirements:
+  - limit an enterprise asset from connecting to potentially malicious or unapproved
+    websites.
+  - Example implementations include category-based filtering, reputation-based filtering,
+    or through the use of block lists.
+  - Enforce filters for all enterprise assets.
+  - Requirements must be a list of short requirement strings.
+  - Requirements must be a list of dictionaries.
+  - Requirements must not use numbers.
+  - Do not output lists of dictionaries.
+  - Do not output prose, explanations, or commentary.
+  - Do not output Markdown fences (no
+element26:
+  name: Host-based Firewalls or Port Filtering
+  requirements:
+  - default-deny
+  - drop
+  - all
+element27:
+  name: Ticket
+  requirements:
+  - recommendation 5.4.1
+element28:
+  name: CIS Critical Security Controls®
+  requirements:
+  - CIS Controls®
+  - Additional Information
+element29:
+  name: Enable audit Logs (Manual)
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element30:
+  name: Avoid use of system:masters group (Manual)
+  requirements:
+  - Validate identity
+  - Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes
+    cluster
+  - Minimize the admission of containers wishing to share the host process ID namespace
+  - Minimize the admission of containers wishing to share the host IPC namespace
+  - Minimize the admission of containers wishing to share the host network namespace
+  - Minimize the admission of containers with allowPrivilegeEscalation
+  - Minimize the admission of root containers
+  - Minimize the admission of containers with added capabilities
+  - Minimize the admission of containers with capabilities assigned
+element31:
+  name: Identity and Access Management (IAM)
+  requirements:
+  - Validate identity
+  - Use dedicated EKS Service Accounts (Manual)
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS (Manual)
+  - Restrict Access to the Control Plane Endpoint (Manual)
+  - Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled
+    (Manual)
+  - Ensure clusters are created with Private Nodes (Manual)
+  - Ensure Network Policy is Enabled and set as appropriate (Manual)
+  - Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+element32:
+  name: CIS Recommendation
+  requirements:
+  - Automated
+  - Manual
+  - Level 1
+  - Level 2
+element33:
+  name: Recommendation
+  requirements:
+  - Understanding on the importance of the recommendation.
+  - Security is a shared responsibility between AWS and the Amazon EKS customer.
+  - Security of the cloud – AWS is responsible for protecting the infrastructure that
+    runs AWS services in the AWS Cloud.
+  - '{''Security in the cloud – Your responsibility includes the following areas'':
+    [''The security configuration of the data plane, including the configuration of
+    the security groups that allow traffic to pass from the Amazon EKS control plane
+    into the customer VPC'', ''The configuration of the worker nodes and the containers
+    themselves'', ''The worker node guest operating system (including updates and
+    security patches)'', ''Amazon EKS follows the shared responsibility model for
+    CVEs and security patches on managed node groups.'', ''Because managed nodes run
+    the Amazon EKS-optimized AMIs, Amazon EKS is responsible for building patched
+    versions of these AMIs when bugs or issues are reported and we are able to publish
+    a fix. However, customers are responsible for deploying these patched AMI versions
+    to your managed node groups.'', {''Other associated application software'': [''Setting
+    up and managing network controls, such as firewall rules'', ''Managing platform-level
+    identity and access management, either with or in addition to IAM'', ''The sensitivity
+    of your data, your company’s requirements, and applicable laws and regulations'']}]}'
+element34:
+  name: AWS Control Plane Security
+  requirements:
+  - Validate identity
+  - Configure logging
+  - Ensure authentication is enforced
+element35:
+  name: Worker Node Configuration Files
+  requirements:
+  - Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+  - Ensure that the kubelet kubeconfig file ownership is set to root:root
+  - Verify that if a file is specified and it exists, the permissions are 644 or more
+    restrictive.
+  - Run the following command on each node to find the appropriate kubeconfig file.
+  - chown root:root <proxy kubeconfig file>
+element36:
+  name: kubelet configuration file
+  requirements:
+  - set_ownership_to_root:root:root
+  - restrict_file_permissions_to_administrators
+  - ensure_config_file_readable_by_administrators
+element37:
+  name: Kubelet
+  requirements:
+  - config file
+  - command line arguments
+  - Ensure authentication is enforced
+element38:
+  name: Verify Configuration
+  requirements:
+  - Validate configuration
+  - Check Anonymous Authentication
+  - Ensure authentication is enforced
+element39:
+  name: Authentication and Authorization Fields
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element40:
+  name: Configuration File Verification
+  requirements:
+  - Verify configuration
+  - Check configuration
+  - Ensure configuration
+element41:
+  name: Ensure that the --read-only-port is disabled (Manual)
+  requirements:
+  - Disable the read-only port.
+  - Use two independent factors
+  - Ensure authentication is enforced
+element42:
+  name: API Configz Endpoint Status
+  requirements:
+  - Search for "streamingConnectionIdleTimeout":"4h0m0s"
+  - Extract live configuration from nodes running kubelet.
+  - Set local proxy port and node name
+  - Ensure kubelet service file does not specify --streaming-connection-idle-timeout
+    argument
+  - If using executable arguments, add --streaming-connection-idle-timeout=4h0m0s
+  - If using the api configz endpoint, extract the live configuration from the nodes
+    running kubelet.
+element43:
+  name: HOSTNAME_PORT and NODE_NAME
+  requirements:
+  - localhost:8001
+  - ip-192.168.31.226.ec2.internal
+element44:
+  name: Kubelet Configuration
+  requirements:
+  - Protect Kernel Defaults
+  - Enable iptables management
+  - Ensure synchronization with pod networking
+element45:
+  name: Kubelet Configuration Details
+  requirements:
+  - Enable iptables management
+  - Ensure synchronization with pod networking
+element46:
+  name: iptables management solution
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element47:
+  name: Kubelet Node Resolution
+  requirements:
+  - Resolve FQDNs
+  - Avoid overriding hostnames with IPs
+  - Use standard hardening configuration templates
+  - Ensure event capture
+element48:
+  name: kubelet
+  requirements:
+  - Extract live configuration from nodes running kubelet
+  - Check that /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does not
+    define an executable argument for eventRecordQPS
+  - Check that /etc/kubernetes/kubelet/kubelet-config.json does not modify the Kubelet
+    config file
+  - Collect audit logs
+  - Ensure logging is enabled across enterprise assets
+element49:
+  name: kubelet server certificate rotation
+  requirements:
+  - Enable kubelet server certificate rotation
+  - RotateKubeletServerCertificate
+  - Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+element50:
+  name: kubelet configuration
+  requirements:
+  - RotateKubeletServerCertificate
+  - FeatureGates
+  - Ensure authentication is enforced
+element51:
+  name: Container-optimized OSes
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element52:
+  name: kubectl delete clusterrolebinding
+  requirements:
+  - delete clusterrolebinding
+  - Use two independent factors
+  - Ensure authentication is enforced
+element53:
+  name: Limit Access to Script Tools
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element54:
+  name: CIS Controls
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element55:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element56:
+  name: Restrict Administrator Privileges to Dedicated Administrator Accounts
+  requirements:
+  - Restrict administrator privileges to dedicated administrator accounts
+  - Conduct general computing activities, such as internet browsing, email, and productivity
+    suite use, from the user’s primary, non-privileged account.
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+  - Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+  - Do not generally permit containers to be run with the hostIPC flag set to true.
+element57:
+  name: kubectl get psp <name> -o=jsonpath='{.spec.hostIPC}'
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element58:
+  name: PodSecurityPolicies
+  requirements:
+  - MustRunAsNonRoot
+  - MustRunAsWithUIDNotIncluding0
+element59:
+  name: Profile Applicability
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element60:
+  name: Browsing, Email, and Productivity Suite Use
+  requirements:
+  - Validate identity
+  - Use dedicated administrative accounts
+  - Ensure authentication is enforced
+element61:
+  name: Implement and Manage a Firewall on Servers
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element62:
+  name: Sensitive Data
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element63:
+  name: Security Context
+  requirements:
+  - MustRunAsNonRoot
+  - RunAsAny
+element64:
+  name: security controls
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element65:
+  name: Scan On Push
+  requirements:
+  - Scan
+  - On Push
+  - Use two independent factors
+  - Ensure authentication is enforced
+element66:
+  name: Perform with this service.
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element67:
+  name: Secondary Account for Elevated Activities
+  requirements:
+  - Validate identity
+  - Only used for administrative activities
+  - Not for internet browsing, email, or similar activities
+  - Minimize cluster access to read-only for Amazon ECR
+  - Configure Cluster Service Account with Storage Object Viewer Role to only allow
+    read-only access to Amazon ECR.
+element68:
+  name: Minimize Container Registries to only those approved
+  requirements:
+  - Use approved container registries
+element69:
+  name: Restrict Administrator Privileges to Dedicated Administrator Accounts
+  requirements:
+  - Dedicated administrator accounts should only be used for administrative activities
+  - Not for internet browsing, email, or similar activities.
+element70:
+  name: Securely Store Master Images
+  requirements:
+  - Store master images and templates on securely configured servers.
+element71:
+  name: IAM Roles for Service Accounts
+  requirements:
+  - Use dedicated EKS Service Accounts (Manual)
+  - Use IAM roles for service accounts on Amazon EKS clusters
+  - Associate an IAM role with a Kubernetes service account
+  - Scope IAM permissions to a service account
+  - Eliminate the need for third-party solutions such as kiam or kube2iam
+  - Credential isolation – A container can only retrieve credentials for the IAM role
+    that is associated with the service account to which it belongs
+  - Audit-ability – Access and event logging is available through CloudTrail to help
+    ensure retrospective auditing
+element72:
+  name: Role Trust Policy for IRA to the Service Account Name
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element73:
+  name: Cluster Networking
+  requirements:
+  - Restrict Access to the Control Plane Endpoint (Manual)
+  - Enable Endpoint Private Access to restrict access to the cluster's control plane
+    to only an allowlist of authorized IPs.
+  - Better protection from outsider attacks
+  - Better protection from insider attacks
+  - Limit the IP addresses that can access your API server from the internet
+  - Disable internet access to the API server
+  - Enable Private Endpoint Access to restrict access to the Kubernetes API server
+  - Completely disable internet access to the API server
+  - Configure Private Endpoint Access to the Kubernetes API server
+  - Configure Public Endpoint Access to the Kubernetes API server
+  - Configure a list of allowable CIDR blocks, resulting in restricted access from
+    the internet.
+  - Specify no CIDR blocks, then the public API server endpoint is able to receive
+    and process requests from all IP addresses by defaulting to ['0.0.0.0/0'].
+  - Use a virtual firewall, operating system firewall, or a third-party firewall agent.
+element74:
+  name: Maintain and Enforce Network-Based URL Filters
+  requirements:
+  - Enforce network-based URL filters
+  - Limit a system's ability to connect to potentially malicious or unapproved websites.
+  - Example implementations include category-based filtering, reputation-based filtering,
+    or through the use of block lists.
+  - Enforce filters for all enterprise assets.
+  - Disable access to the Kubernetes API from outside the node network if it is not
+    required.
+  - Configure the EKS cluster endpoint to be private.
+  - Configure public access with a set of whitelisted CIDR blocks and set private
+    endpoint access to enabled.
+  - Check for private endpoint access to the Kubernetes API server
+  - Enable private endpoint access to the Kubernetes API server, all communication
+    between your nodes and the API server stays within your VPC.
+  - Update your cluster accordingly using the AWS CLI to ensure that Private Endpoint
+    Access is enabled.
+  - '{''For example, the following command would enable private access to the Kubernetes
+    API and ensure that no public access is permitted'': None}'
+  - aws eks update-cluster-config --region $AWS_REGION --name $CLUSTER_NAME --resources-vpc-config
+    endpointPrivateAccess=true, endpointPublicAccess=false
+  - '{''Note'': ''For more detailed information, see the EKS Cluster Endpoint documentation
+    link in the references section.''}'
+  - '{''Default Value'': ''By default, the Public Endpoint is disabled.''}'
+  - '{''References'': None}'
+  - https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html
+element75:
+  name: Host-based Firewalls or Port Filtering
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element76:
+  name: Fargate for Untrusted Workloads
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element77:
+  name: Ensure that the kubelet configuration file has
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element78:
+  name: Identity and Access Management (IAM)
+  requirements:
+  - Validate identity
+  - Use dedicated EKS Service Accounts (Manual)
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS (Manual)
+  - Set
+  - Correctly
+  - 'True'
+  - 'False'
+  - Prefer using dedicated EKS Service Accounts
+  - Ensure Network Policy is Enabled and set as appropriate
+  - Enable audit Logs
+  - Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+  - Ensure that the kubelet kubeconfig file ownership is set to root:root
+  - Ensure that the kubelet configuration file has permissions set to 644 or more
+    restrictive
+  - Ensure that the kubelet configuration file ownership is set to root:root
+  - Minimize user access to Amazon ECR
+  - Minimize cluster access to read-only for Amazon ECR
+element79:
+  name: Ensure that the RotateKubeletServerCertificate argument
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element80:
+  name: Ensure that default service accounts are not actively used.
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element81:
+  name: Recommendation
+  requirements:
+  - Minimize admission of privileged containers
+  - Minimize access to secrets
+  - Minimize cluster access to read-only for Amazon ECR
+  - Minimize user access to Amazon ECR
+element82:
+  name: Minimize Container Registries
+  requirements:
+  - Validate user identity using two independent factors
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS
+  - Restrict Access to the Control Plane Endpoint
+  - Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled
+  - Ensure clusters are created with Private Nodes
+  - Ensure Network Policy is Enabled and set as appropriate
+  - Encrypt traffic to HTTPS load balancers with TLS certificates
+  - Consider Fargate for running untrusted workloads
+  - Minimize access to secrets
+  - Minimize wildcard use in Roles and ClusterRoles
+  - Minimize access to create pods
+  - Ensure default service accounts are not actively used
+  - Avoid use of system:masters group
+  - Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes
+    cluster
+  - Minimize the admission of containers with capabilities assigned
+  - Minimize the admission of containers with capabilities escalated
+  - Minimize the admission of containers with added capabilities
+  - Minimize the admission of containers with security context assigned
+  - Create administrative boundaries between resources using namespaces
+  - Apply Security Context to Your Pods and Containers
+element83:
+  name: Minimize cluster access to read-only for Amazon ECR
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element84:
+  name: CIS Amazon Elastic
+  requirements:
+  - CIS Controls®
+  - Additional Information
+element85:
+  name: Enable audit Logs (Manual)
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element86:
+  name: Avoid use of system:masters group (Manual)
+  requirements:
+  - Validate identity
+  - Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes
+    cluster
+  - Minimize the admission of containers wishing to share the host process ID namespace
+  - Minimize the admission of containers wishing to share the host IPC namespace
+  - Minimize the admission of containers wishing to share the host network namespace
+  - Minimize the admission of containers with allowPrivilegeEscalation
+  - Minimize the admission of root containers
+  - Minimize the admission of containers with added capabilities
+  - Minimize the admission of containers with capabilities assigned
+element87:
+  name: Identity and Access Management (IAM)
+  requirements:
+  - Prefer using dedicated EKS Service Accounts (Manual)
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS (Manual)
+  - Restrict Access to the Control Plane Endpoint (Manual)
+  - Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled
+    (Manual)
+  - Ensure clusters are created with Private Nodes (Manual)
+  - Ensure Network Policy is Enabled and set as appropriate (Manual)
+  - Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+element88:
+  name: CIS Recommendation
+  requirements:
+  - Automated
+  - Manual
+  - Level 1
+  - Level 2
+element89:
+  name: Recommendation
+  requirements:
+  - Security
+  - Functionality
+  - Operational consequences
+  - Compliance
+element90:
+  name: AWS
+  requirements:
+  - Secure the control plane
+  - Configure logging
+  - Enable audit logs
+  - Ensure authentication is enforced
+element91:
+  name: Security Recommendations
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element92:
+  name: kubelet configuration file
+  requirements:
+  - set_ownership_to_root:root
+  - restrict_file_permissions_to_administrators
+  - ensure_config_file_readable_by_administrators
+element93:
+  name: Kubelet
+  requirements:
+  - Accept configuration via a configuration file
+  - Accept configuration via command line arguments
+  - Ensure that the Anonymous Auth is Not Enabled
+  - Check for the existence of command line arguments
+  - Check for the location of the configuration file
+element94:
+  name: Verify Configuration
+  requirements:
+  - Validate configuration
+  - Check Anonymous Authentication
+  - Ensure authentication is enforced
+element95:
+  name: Ensure that the --authorization-mode argument is not set to
+  requirements:
+  - Never allow all requests.
+  - Enable explicit authorization.
+  - Restrict this behavior and only allow explicitly authorized requests.
+  - Ensure authentication is enforced
+element96:
+  name: Authentication and Authorization Fields
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element97:
+  name: Configuration File
+  requirements:
+  - Verify configuration
+  - Provide configuration
+  - Ensure authentication
+element98:
+  name: Ensure that the --read-only-port is disabled (Manual)
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element99:
+  name: API Configz Endpoint
+  requirements:
+  - Validate identity
+  - Search for status of streamingConnectionIdleTimeout
+  - Extract live configuration from nodes running kubelet
+element100:
+  name: Kubelet Configuration
+  requirements:
+  - Protect Kernel Defaults
+  - Kubelet Config File
+  - API Configz Endpoint
+  - Live Configuration
+element101:
+  name: iptables management solution
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element102:
+  name: Kubelet Node Configuration
+  requirements:
+  - Set node resolution to resolvable FQDNs
+  - Avoid overriding hostnames with IPs
+  - Ensure usage of --hostname-override does not exist
+  - Verify --hostname-override argument does not exist in the output
+  - Ensure eventRecordQPS is set to 0 or a level appropriate for the cluster
+element103:
+  name: kubelet
+  requirements:
+  - Ensure eventRecordQPS is extracted
+  - Ensure the status of eventRecordQPS is extracted
+  - Ensure that the Kubelet config file is edited
+  - Ensure that the kubelet service file is edited
+  - Ensure that the eventRecordQPS parameter is set
+  - Ensure that the eventRecordQPS is extracted
+element104:
+  name: kubelet server certificate rotation
+  requirements:
+  - Enable kubelet server certificate rotation
+  - Ensure that the RotateKubeletServerCertificate argument is set to true
+  - Automate the periodic rotation of the certificate
+  - Address availability in the CIA triad
+  - Ensure that there are no downtimes due to expired certificates
+element105:
+  name: kubelet-config.json
+  requirements:
+  - RotateKubeletServerCertificate
+  - Ensure authentication is enforced
+element106:
+  name: Container-optimized OSes
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element107:
+  name: kubectl
+  requirements:
+  - delete clusterrolebinding
+  - clusterrolebinding
+  - ensure
+element108:
+  name: Kubernetes API
+  requirements:
+  - Access to Kubernetes API
+  - Understanding of Kubernetes API
+  - Verification of API access
+element109:
+  name: Wildcards
+  requirements:
+  - Match all items
+  - Use wildcard "*"
+  - No requirements
+element110:
+  name: Access Control
+  requirements:
+  - RBAC (Role-Based Access Control)
+  - ClusterRoles
+  - ClusterRoleBindings
+  - ServiceAccounts
+  - PodSecurityPolicies
+  - AccountKeys
+element111:
+  name: Pod Security Policies
+  requirements:
+  - Pod Security Policies
+  - Pod Security Rules
+  - Restrictions on Pod access
+element112:
+  name: CIS Controls
+  requirements:
+  - Version 2.7
+  - Allowlist Authorized Scripts
+  - Digital Signatures
+  - Version 7
+element113:
+  name: Principle of Least Privilege
+  requirements:
+  - Least privilege principle
+  - Avoid assigning privileged access
+  - Use specific objects/actions
+element114:
+  name: Create Pod Access
+  requirements:
+  - Restrictions on pod creation
+  - Group-based access
+element115:
+  name: Manage Create Access
+  requirements:
+  - Remove create access to pod objects
+element116:
+  name: Limit Access to Script Tools
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element117:
+  name: CIS Controls
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element118:
+  name: Restrict Administrator Privileges to Dedicated Administrator Accounts
+  requirements:
+  - Restrict administrator privileges to dedicated administrator accounts
+  - on enterprise assets.
+  - Conduct general computing activities, such as internet browsing, email, and productivity
+    suite use, from the user’s primary, non-privileged account.
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+  - This account should only be used for administrative activities and not internet
+    browsing, email, or similar activities.
+  - There should be at least one PodSecurityPolicy (PSP) defined which does not permit
+    containers to share the host IPC namespace.
+  - If you need to run containers which require hostIPC, this should be defined in
+    a separate PSP and you should carefully check RBAC controls to ensure that only
+    limited service accounts and users are given permission to access that PSP.
+  - By default, PodSecurityPolicies are not defined.
+element119:
+  name: kubectl get psp <name> -o=jsonpath='{.spec.hostIPC}'
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element120:
+  name: PodSecurityPolicies
+  requirements:
+  - MustRunAsNonRoot
+  - MustRunAsWithUIDNotIncluding0
+element121:
+  name: Profile Applicability
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element122:
+  name: Browsing, Email, and Productivity Suite Use
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element123:
+  name: Firewall
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element124:
+  name: Sensitive Data
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element125:
+  name: Security Context
+  requirements:
+  - Security Context
+  - Apply Security Context
+  - Define Security Context
+  - Allow Privilege Escalation
+  - Require Drop Capabilities
+  - Allow Core Volume Types
+  - Allow Volumes
+  - Allow Secrets
+  - Allow PersistentVolumes
+  - Allow PersistentVolumeClaims
+  - MustRunAsNonRoot
+  - RunAsAny
+  - MustRunAs
+element126:
+  name: Security Controls
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element127:
+  name: Amazon ECR
+  requirements:
+  - aws:ResourceTag
+  - ecr:ResourceTag
+  - Ensure Administrator Privileges to Dedicated Administrator Accounts
+element128:
+  name: Secondary Account for Elevated Activities
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element129:
+  name: IAM Roles for Service Accounts
+  requirements:
+  - Least privilege
+  - Credential isolation
+  - Audit-ability
+element130:
+  name: Role Trust Policy for IRSA to the Service Account Name
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element131:
+  name: Access the information.
+  requirements:
+  - Restrict Access to the Control Plane Endpoint (Manual)
+  - Enable Endpoint Private Access to restrict access to the cluster's control plane
+    to only an allowlist of authorized IPs.
+  - Limit the IP addresses that can access your API server from the internet, or completely
+    disable internet access to the API server.
+  - Ensure authentication is enforced
+element132:
+  name: Network-Based URL Filters
+  requirements:
+  - Validate identity
+  - Limit an enterprise asset from connecting to potentially malicious or unapproved
+    websites.
+  - Enforce filters for all enterprise assets.
+  - Ensure authentication is enforced
+element133:
+  name: Host-based Firewalls or Port Filtering
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element134:
+  name: Fargate Profile
+  requirements:
+  - Specify which pods should use Fargate when they are launched.
+  - Define a Fargate profile that specifies which pods should use Fargate when they
+    are launched.
+  - Specify a namespace, but the labels option is not required.
+  - Specify a pod execution role to use with your Fargate profile.
+  - Only IAM roles with the eks-fargate-pods.amazonaws.com service principal are shown.
+element135:
+  name: Ensure that the kubelet configuration file has
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element136:
+  name: RotateKubeletServerCertificate
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element137:
+  name: Ensure that default service accounts are not actively used.
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element138:
+  name: Recommendation
+  requirements:
+  - Minimize admission of containers with added capabilities
+  - Minimize admission of containers with capabilities assigned
+  - Minimize admission of containers with capabilities restricted
+  - Minimize admission of containers with privileges escalated
+  - Minimize admission of containers with root privileges
+  - Minimize access to secrets
+  - Minimize cluster access to read-only for Amazon ECR
+  - Minimize user access to Amazon ECR
+element139:
+  name: Minimize Container Registries
+  requirements:
+  - Validate identity using two independent factors
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS
+  - Restrict Access to the Control Plane Endpoint
+  - Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled
+  - Ensure clusters are created with Private Nodes
+  - Ensure Network Policy is Enabled and set as appropriate
+  - Encrypt traffic to HTTPS load balancers with TLS certificates
+  - Consider Fargate for running untrusted workloads
+  - Minimize access to secrets
+  - Minimize wildcard use in Roles and ClusterRoles
+  - Minimize access to create pods
+  - Ensure default service accounts are not actively used
+  - Avoid use of system:masters group
+  - Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes
+    cluster
+  - Minimize the admission of root containers
+  - Minimize the admission of containers wishing to share the host process ID namespace
+  - Minimize the admission of containers wishing to share the host IPC namespace
+  - Minimize the admission of containers wishing to share the host network namespace
+  - Minimize the admission of containers with allowPrivilegeEscalation
+  - Minimize the admission of containers with added capabilities
+  - Minimize the admission of containers with capabilities assigned
+  - Create administrative boundaries between resources using namespaces
+  - Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third
+    party provider
+  - Minimize user access to Amazon ECR
+element140:
+  name: Minimize cluster access to read-only for Amazon ECR
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced

@@ -1,0 +1,1077 @@
+element1:
+  name: RotateKubeletServerCertificate
+  requirements:
+  - 'True'
+  - automated
+element2:
+  name: Image Vulnerability Scanning
+  requirements:
+  - Automated
+  - Amazon ECR
+  - Third-party provider
+element3:
+  name: API Server Audit Log
+  requirements:
+  - Enabled
+element4:
+  name: Control Plane Logging
+  requirements:
+  - Enabled
+element5:
+  name: Authenticator Logging
+  requirements:
+  - Enabled
+element6:
+  name: Controller Manager Logging
+  requirements:
+  - Enabled
+element7:
+  name: Scheduler Logging
+  requirements:
+  - Enabled
+element8:
+  name: Cluster Logging
+  requirements:
+  - Enabled
+element9:
+  name: Region Code Logging
+  requirements:
+  - Enabled
+element10:
+  name: AWS EKS Describe-Cluster
+  requirements:
+  - Enabled
+element11:
+  name: AWS EKS Update-Cluster-Config
+  requirements:
+  - Enabled
+element12:
+  name: Amazon EKS Logging
+  requirements:
+  - Enabled
+element13:
+  name: AWS EKS Control Plane Logs
+  requirements:
+  - Enabled
+element14:
+  name: AWS EKS Detective
+  requirements:
+  - Enabled
+element15:
+  name: AWS EKS Key Controls
+  requirements:
+  - Enabled
+element16:
+  name: AWS EKS References
+  requirements:
+  - Enabled
+element17:
+  name: kubeconfig file permissions
+  requirements:
+  - more restrictive
+element18:
+  name: location of the configuration file, provided with the --config argument, as
+    this will be
+  requirements:
+  - /path/to/kubelet-config.json
+element19:
+  name: kubelet-config.json
+  requirements:
+  - 'True'
+element20:
+  name: Establish and Maintain a Secure Configuration Process
+  requirements:
+  - Establish and maintain a secure configuration process for enterprise assets (end-user
+    devices, including portable and mobile, non-computing/IoT devices, and servers)
+    and software (operating systems and applications).
+  - Review and update documentation annually, or when significant enterprise changes
+    occur that could impact this Safeguard.
+  - Maintain secure images or templates for all systems in the enterprise based on
+    the organization's approved configuration standards.
+  - Any new system deployment or existing system that becomes compromised should be
+    imaged using one of those images or templates.
+element21:
+  name: Maintain Secure Images
+  requirements:
+  - Maintain secure images or templates for all systems in the enterprise based on
+    the organization's approved configuration standards.
+  - Any new system deployment or existing system that becomes compromised should be
+    imaged using one of those images or templates.
+element22:
+  name: Minimize wildcard use in Roles and ClusterRoles
+  requirements:
+  - Minimize wildcard use in Roles and ClusterRoles (Automated)
+element23:
+  name: Cluster Access Manager API
+  requirements:
+  - Automated
+  - Role-Based Access Control (RBAC)
+  - Service Accounts
+element24:
+  name: show the namespace and name of each matching pod.
+  requirements:
+  - '{''name'': ''show the namespace and name of each matching pod.''}'
+element25:
+  name: Implement Secrets Management
+  requirements:
+  - Kubernetes supports mounting secrets as data volumes or as environment variables.
+  - Minimize the use of environment variable secrets.
+element26:
+  name: default
+  requirements:
+  - '[[None], None]'
+  - '[None]'
+element27:
+  name: kube-system
+  requirements:
+  - '[[None]]'
+element28:
+  name: kube-public
+  requirements:
+  - '[[None]]'
+element29:
+  name: kube-node-lease
+  requirements:
+  - '[[None]]'
+element30:
+  name: default
+  requirements:
+  - '[[None]]'
+element31:
+  name: kube-system
+  requirements:
+  - '[[None]]'
+element32:
+  name: kube-public
+  requirements:
+  - '[[None]]'
+element33:
+  name: kube-node-lease
+  requirements:
+  - '[[None]]'
+element34:
+  name: default
+  requirements:
+  - '[[None]]'
+element35:
+  name: kube-system
+  requirements:
+  - '[[None]]'
+element36:
+  name: kube-public
+  requirements:
+  - '[[None]]'
+element37:
+  name: kube-node-lease
+  requirements:
+  - '[[None]]'
+element38:
+  name: default
+  requirements:
+  - '[[None]]'
+element39:
+  name: kube-system
+  requirements:
+  - '[[None]]'
+element40:
+  name: kube-public
+  requirements:
+  - '[[None]]'
+element41:
+  name: kube-node-lease
+  requirements:
+  - '[[None]]'
+element42:
+  name: default
+  requirements:
+  - '[[None]]'
+element43:
+  name: kube-system
+  requirements:
+  - '[[None]]'
+element44:
+  name: kube-public
+  requirements:
+  - '[[None]]'
+element45:
+  name: Use Standard Hardening Configuration Templates
+  requirements:
+  - v8
+  - Use standard, industry-recommended hardening configuration templates for application
+    infrastructure
+element46:
+  name: establish and maintain dedicated computing resources for all administrative
+    work
+  requirements:
+  - Establish and maintain dedicated computing resources, either physically or logically
+    separated, for all administrative tasks or tasks requiring administrative access.
+  - The computing resources should be segmented from the enterprise’s primary network
+    and not be allowed internet access.
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+  - This account should only be used for administrative activities and not internet
+    browsing, email, or similar activities.
+element47:
+  name: Kubernetes Secrets
+  requirements:
+  - string
+element48:
+  name: VPC-CNI
+  requirements:
+  - 203.0.113.5/32
+element49:
+  name: Calico
+  requirements:
+  - Other network policy engine
+element50:
+  name: Network Policy
+  requirements:
+  - 1.  https://docs.aws.amazon.com/eks/latest/userguide/eks-networking-add-ons.html
+element51:
+  name: CIS Controls
+  requirements:
+  - Version
+  - Control
+  - IG 1 IG 2 IG 3
+element52:
+  name: v8
+  requirements:
+  - 12.6 Use of Secure Network Management and Communication Protocols
+element53:
+  name: 9.4 Encrypt All Sensitive Information in Transit
+  requirements:
+  - '1.  Encrypt sensitive data in transit. Example implementations can include: Transport
+    Layer Security (TLS) and Open Secure Shell (OpenSSH).'
+element54:
+  name: HTTPS Load Balancers
+  requirements:
+  - 1.  Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+element55:
+  name: kubelet configuration file permissions
+  requirements:
+  - 3.1.4
+  - 3.2.1
+  - 3.2.2
+  - 3.2.3
+  - 3.2.4
+  - 3.2.5
+  - 3.2.6
+  - 3.2.7
+  - 3.2.8
+element56:
+  name: Minimize admission of containers wishing to share
+  requirements:
+  - AllowPrivilegeEscalation
+  - Minimize admission of containers wishing to share
+  - Minimize admission of containers wishing to share the host process ID namespace
+  - Minimize admission of containers wishing to share the host IPC namespace
+  - Minimize admission of containers wishing to share the host network namespace
+  - Minimize the admission of containers wishing to share the host network namespace
+  - Minimize the admission of containers wishing to share the host IPC namespace
+  - Minimize the admission of containers with allowPrivilegeEscalation
+  - Minimize the admission of containers wishing to share the host process ID namespace
+element57:
+  name: CIS Amazon Elastic
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element58:
+  name: Remediation Procedure
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element59:
+  name: Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element60:
+  name: Image Registry and Image Scanning
+  requirements:
+  - Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third
+    party provider (Automated)
+  - Minimize user access to Amazon ECR (Manual)
+  - Minimize cluster access to read-only for Amazon ECR (Manual)
+  - Minimize Container Registries to only those approved (Manual)
+element61:
+  name: Benchmarks
+  requirements:
+  - CIS Configuration Assessment Tool (CIS-CAT® Pro Assessor)
+  - CIS Benchmarks™ Certified 3rd Party Tooling
+  - Apply the Correct Version of a Benchmark
+  - Use the most recent version of a Benchmark
+  - '{''Exceptions'': [''The reasons for the exception should be reviewed cross-functionally
+    and be well documented for audit purposes.'', ''A plan should be developed for
+    mitigating, or eliminating, the exception in the future, if applicable.'', ''If
+    the organization decides to accept the risk of this exception (not work toward
+    mitigation or elimination), this should be documented for audit purposes.'']}'
+element62:
+  name: CIS Benchmark™
+  requirements:
+  - Remediation
+  - Testing
+  - Deployment
+  - Monitoring
+element63:
+  name: Benchmark
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element64:
+  name: Controls version
+  requirements:
+  - Validate user identity
+  - Safeguard
+  - Implementation Group (IG)
+element65:
+  name: Benchmark
+  requirements:
+  - Addresses the CIS Controls safeguards
+  - (v7) “5.1 - Establish Secure Configurations”
+  - (v8) '4.1 - Establish and Maintain a Secure Configuration Process'
+element66:
+  name: Supplementary information
+  requirements:
+  - Does not correspond to any other field
+element67:
+  name: Recommendations
+  requirements:
+  - Control Plane Components
+  - Security configuration of data plane
+  - Configuration of worker nodes
+  - Worker node guest operating system
+  - Setting up and managing network controls
+  - Managing platform-level identity and access management
+  - The sensitivity of your data, your company’s requirements, and applicable laws
+    and regulations
+element68:
+  name: Logging
+  requirements:
+  - Enable audit Logs (Automated)
+element69:
+  name: Logging
+  requirements:
+  - Profile Applicability
+  - Control plane logs provide visibility into operation of the EKS Control plane
+    component systems.
+element70:
+  name: Control Plane Logging
+  requirements:
+  - Enabled
+element71:
+  name: Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element72:
+  name: Access Control Lists
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element73:
+  name: kubelet configuration file ownership
+  requirements:
+  - is owned by root:root
+  - config file is specified by --config argument
+element74:
+  name: permissions to maintain the integrity of the file.
+  requirements:
+  - validate user identity
+  - use two independent factors
+  - ensure authentication is enforced
+element75:
+  name: Anonymous Authentication
+  requirements:
+  - Not enabled
+  - Authentication is required
+  - Configuration via command line argument
+element76:
+  name: Authentication
+  requirements:
+  - Anonymous Authentication
+  - Enable two independent factors
+  - Ensure authentication is enforced
+element77:
+  name: Enterprise Assets
+  requirements:
+  - Validate user identity
+  - Conduct general computing activities
+  - Internet browsing
+  - Email
+  - Productivity suite use
+  - Change default passwords
+element78:
+  name: kubelet-idle-timeout
+  requirements:
+  - 4h0m0s
+element79:
+  name: Kubelet Configuration
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element80:
+  name: kubelet
+  requirements:
+  - Ensure authentication is enforced
+  - Validate identity
+  - Use two independent factors
+  - Set eventRecordQPS to 0 or a level which ensures appropriate event capture (Automated)
+element81:
+  name: Encrypt Sensitive Data in Transit
+  requirements:
+  - Encrypt data in transit
+  - Implement encryption methods
+  - Utilize TLS/SSL
+  - Ensure data security
+element82:
+  name: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH)
+  requirements:
+  - Encrypt all sensitive information in transit
+  - Enable kubelet server certificate rotation
+  - Ensure authentication is enforced
+element83:
+  name: kubectl get nodes
+  requirements:
+  - Restart the kubelet service and check status.
+  - The example below is for when using systemctl to manage services.
+  - '{''Default Value'': [''See the Amazon EKS documentation for the default value.'',
+    {''References'': [''https://github.com/kubernetes/kubernetes/pull/45059'', ''https://kubernetes.io/docs/admin/kubelet-tls-bootstrapping/#kubelet-configuration'',
+    {''CIS Controls'': [{''Controls'': [{''Version'': [{''Control'': [''IG 1 IG 2
+    IG 3'']}, ''v8'']}, {''Control'': [''IG 2 IG 3'']}]}, {''CIS Controls'': [{''Controls'':
+    [{''Version'': [{''Control'': [''IG 1 IG 2 IG 3'']}]}, ''v8'']}]}]}]}]}'
+element84:
+  name: Minimize wildcard use in Roles and ClusterRoles
+  requirements:
+  - Level 1
+  - Use wildcards is not optimal from a security perspective
+  - It may allow for inadvertent access to be granted when new resources are added
+    to the Kubernetes API
+  - It grants excessive rights to the Kubernetes API.
+element85:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element86:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element87:
+  name: Cluster Access Manager API
+  requirements:
+  - Automated
+  - Streamline
+  - Enhance
+  - Manage access controls
+  - Ensure authentication is enforced
+element88:
+  name: API
+  requirements:
+  - '{''authenticationmode'': ''API'', ''requirements'': [''Validate identity'', ''Use
+    two independent factors'', ''Ensure authentication is enforced'']}'
+element89:
+  name: Profile Applicability
+  requirements:
+  - Level 1
+  - Description
+  - Cluster roles and roles with the impersonate, bind or escalate permissions should
+    not
+  - be granted unless strictly required.
+  - Each of these permissions allow a particular subject to escalate their privileges
+    beyond those explicitly granted by cluster administrators
+  - '{''Rationale'': None}'
+  - The impersonate privilege allows a subject to impersonate other users gaining
+    their
+  - rights to the cluster.
+  - The bind privilege allows the subject to add a binding to a cluster role or role
+  - which escalates their effective permissions in the cluster.
+  - The escalate privilege allows a subject to modify cluster roles to which they
+    are
+  - bound, increasing their rights to that level.
+  - Each of these permissions has the potential to allow for privilege escalation
+    to cluster-
+  - admin level.
+  - '{''Impact'': None}'
+  - There are some cases where these permissions are required for cluster service
+  - operation, and care should be taken before removing these permissions from system
+  - service accounts.
+  - '{''Audit'': None}'
+  - Review the users who have access to cluster roles or roles which provide the
+  - impersonate, bind or escalate privileges.
+  - '{''Remediation'': None}'
+  - Where possible, remove the impersonate, bind and escalate rights from subjects.
+  - '{''Default Value'': None}'
+  - In a default kubeadm cluster, the system:masters group and clusterrole-aggregation-
+  - controller service account have access to the escalate privilege. The system:masters
+  - group also has access to bind and impersonate.
+  - '{''References'': None}'
+  - 1. https://www.impidio.com/blog/kubernetes-rbac-security-pitfalls
+  - 2. https://raesene.github.io/blog/2020/12/12/Escalating_Away/
+  - 3. https://raesene.github.io/blog/2021/01/16/Getting-Into-A-Bind-with-Kubernetes/
+element90:
+  name: Pod Security Policy
+  requirements:
+  - Restrict Administrator Privileges to Dedicated Administrator Accounts
+  - Minimize the admission of containers wishing to share the host process ID namespace
+element91:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element92:
+  name: HostNetwork Restriction
+  requirements:
+  - Restrict administrator privileges to dedicated administrator accounts
+  - Restrict administrator privileges to dedicated administrator accounts on enterprise
+    assets.
+  - Conduct general computing activities, such as internet browsing, email, and productivity
+    suite use, from the user’s primary, non-privileged account.
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+element93:
+  name: Allow Administrative Account Access
+  requirements:
+  - Use dedicated or secondary account for elevated activities
+  - Ensure administrative activities only
+  - Do not use internet browsing, email, or similar activities
+  - Do not use privileged containers
+element94:
+  name: CNI Plugin
+  requirements:
+  - Ensure CNI plugin supports network policies.
+  - Ensure CNI plugin supports both Ingress and Egress network policies.
+  - Ensure network policies adhere to the policy of least privileged access.
+  - Ensure each namespace has Network Policies defined.
+element95:
+  name: Network Segmentation
+  requirements:
+  - Validate identity
+  - Locate all sensitive information
+  - Separate VLANs
+  - Ensure authorized systems can communicate
+element96:
+  name: Application-Layer Encryption
+  requirements:
+  - Validate identity
+  - Use a tool requiring a secondary authentication mechanism
+  - Access to data storage device(s) not permitting plain-text data access
+element97:
+  name: Image Scanning
+  requirements:
+  - Amazon ECR
+  - Image Scanning
+  - Third-party provider
+element98:
+  name: Amazon ECR
+  requirements:
+  - aws:ResourceTag
+  - ecr:ResourceTag
+  - Ensure administrator privileges to dedicated administrator accounts
+element99:
+  name: Administrative Activities and not internet browsing, email, or similar activities.
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element100:
+  name: Container Registries
+  requirements:
+  - Allow listing of approved registries
+  - Allow access to authorized cloud storage or email providers
+  - Implement secure storage of master images
+element101:
+  name: AWS EKS Key Management Service
+  requirements:
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS (Manual)
+  - Enable encryption provider support during EKS cluster creation
+  - Use AWS Key Management Service (KMS) Customer Managed Keys (CMKs) for envelope
+    encryption
+element102:
+  name: Kubernetes Secrets
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element103:
+  name: Cluster from accidental leaks of master certificates from your company's
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element104:
+  name: Master Node
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element105:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element106:
+  name: Calico
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element107:
+  name: RBAC Access Control
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element108:
+  name: Minimize admission of containers with
+  requirements:
+  - Validate identity
+  - Allow Privilege Escalation
+  - Use two independent factors
+  - Ensure authentication is enforced
+element109:
+  name: kubelet configuration file permissions
+  requirements:
+  - set to 644 or more restrictive
+  - 
+  - 3.1.4
+  - 3.2.1
+  - 3.1.2
+  - 3.1.3
+  - 3.2.5
+  - 3.2.6
+  - 3.2.7
+  - 3.2.8
+element110:
+  name: Ensure that the --rotate-certificates argument is not
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element111:
+  name: Host Process ID Namespace
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element112:
+  name: Cluster Access
+  requirements:
+  - Private Endpoint Enabled & Public Access Disabled
+  - Ensure Clusters are Created with Private Endpoint Enabled and Public Access Disabled
+element113:
+  name: Ensure clusters are created with Private Nodes
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element114:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element115:
+  name: Remediation Procedure
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element116:
+  name: Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element117:
+  name: CIS Benchmarks™
+  requirements:
+  - Focus on technical configuration settings
+  - Use in conjunction with other essential cyber hygiene tasks
+  - Monitoring the base operating system and applications
+  - End-point protection
+  - Logging and monitoring user and system activity
+element118:
+  name: Benchmarks
+  requirements:
+  - Manual Assessment and Remediation
+  - CIS Configuration Assessment Tool (CIS-CAT® Pro Assessor)
+  - CIS Benchmarks™ Certified 3rd Party Tooling
+  - Deployment of Benchmark Applicable to Management Settings
+  - Use the most recent version of a Benchmark
+  - Exceptions to some Benchmark Recommendations
+element119:
+  name: CIS Benchmark™
+  requirements:
+  - Remediation
+  - Testing
+  - Careful Approach
+  - Representative Lab Systems
+  - Initial Deployment
+  - Iterative Deployment
+  - Monitoring
+  - Scalable Hardening
+element120:
+  name: Benchmark
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element121:
+  name: Controls
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element122:
+  name: Control Plane Logging
+  requirements:
+  - Enable Control Plane Logging
+  - Enable Audit Logging
+  - Enable Detailed Logging
+element123:
+  name: Ensure audit logs are collected and managed
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element124:
+  name: kubeconfig file permissions
+  requirements:
+  - 644 or more restrictive
+  - Ensure authentication is enforced
+element125:
+  name: Access Control Lists
+  requirements:
+  - Validate user identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element126:
+  name: kubelet Configuration File
+  requirements:
+  - File is owned by root:root
+  - File is writable by only administrators
+  - File has permissions of 644 or more restrictive
+element127:
+  name: Permissions to maintain the integrity of the file.
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element128:
+  name: Anonymous Authentication
+  requirements:
+  - Not enabled
+  - Authentication is required
+  - Anonymous requests are disallowed
+  - Configuration via command-line arguments is supported
+element129:
+  name: Authentication
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element130:
+  name: kubelet configuration file
+  requirements:
+  - authentication
+  - webhook
+  - authorization
+element131:
+  name: Enterprise Assets
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element132:
+  name: Kubelet Configuration
+  requirements:
+  - Disable read-only port
+  - Ensure that the --read-only-port is disabled (Automated)
+element133:
+  name: Kubelet
+  requirements:
+  - Restart the kubelet service
+  - Check status
+  - Use secure network management and communication protocols
+  - Ensure only approved ports, protocols and services are running
+  - Set streamingConnectionIdleTimeout to 4h0m0s
+element134:
+  name: Kubelet Configuration
+  requirements:
+  - Ensure authentication is enforced
+  - Use secure network management and communication protocols (e.g., 802.1X, Wi-Fi
+    Protected Access 2 (WPA2) Enterprise or greater)
+  - Ensure Only Approved Ports, Protocols and Services Are Running
+element135:
+  name: kubelet
+  requirements:
+  - Ensure authentication is enforced
+  - Use two independent factors
+  - Validate identity
+  - Set eventRecordQPS to 0 or a level which ensures appropriate event capture
+element136:
+  name: Encrypt Sensitive Data in Transit
+  requirements:
+  - Encrypt data in transit
+  - Implement encryption protocols
+  - Use TLS/SSL
+  - Ensure data confidentiality
+  - Protect against eavesdropping
+element137:
+  name: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH)
+  requirements:
+  - Encrypt All Sensitive Information in Transit
+  - Enable kubelet server certificate rotation
+  - Ensure authentication is enforced
+element138:
+  name: kubectl
+  requirements:
+  - Get nodes
+  - Check status
+  - '{''Default Value'': None}'
+element139:
+  name: Minimize wildcard use in Roles and ClusterRoles
+  requirements:
+  - Level 1
+  - Use wildcards not optimal
+  - Allow for accidental access
+element140:
+  name: CIS Controls
+  requirements:
+  - Allowlist Authorized Scripts
+  - Use unique passwords
+  - Limit Access to Script Tools
+element141:
+  name: Kubernetes Service Account
+  requirements:
+  - Ensure authentication is enforced
+  - Use two independent factors
+  - Do not use numbers as requirements
+  - Do not output lists of dictionaries
+  - Do not output prose, explanations, or commentary
+  - Do not output Markdown fences
+  - Output ONLY the YAML dictionary
+element142:
+  name: Cluster Access Manager API
+  requirements:
+  - Automated
+  - Streamline
+  - Enhance
+  - Manage access controls
+  - Amazon EKS clusters
+  - Role-Based Access Control (RBAC)
+  - Service Accounts
+element143:
+  name: API
+  requirements:
+  - '{''authenticationmode'': ''API'', ''requirements'': [''validate identity'', ''Use
+    two independent factors'', ''Ensure authentication is enforced'']}'
+element144:
+  name: Profile Applicability
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element145:
+  name: Pod Security Policy
+  requirements:
+  - Restrict Administrator Privileges to Dedicated Administrator Accounts
+  - Minimize the admission of containers wishing to share the host process ID namespace
+element146:
+  name: User Identity Validation
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element147:
+  name: Pod Security Policy
+  requirements:
+  - Restrict administrator privileges to dedicated administrator accounts on enterprise
+    assets.
+  - Conduct general computing activities, such as internet browsing, email, and productivity
+    suite use, from the user’s primary, non-privileged account.
+  - Ensure that all users with administrative account access use a dedicated or secondary
+    account for elevated activities.
+element148:
+  name: AllowPrivilegeEscalation
+  requirements:
+  - allowPrivilegeEscalation
+  - Use dedicated or secondary account for elevated activities
+  - Ensure authentication is enforced
+element149:
+  name: CNI Plugin
+  requirements:
+  - Ensure CNI plugin supports network policies.
+  - Ensure CNI plugin supports both Ingress and Egress network policies.
+  - Ensure network policies adhere to the policy of least privileged access.
+  - Ensure network policies should adhere to the policy of least privileged access.
+  - Ensure each namespace has Network Policies defined (Automated)
+element150:
+  name: Network Segmentation
+  requirements:
+  - Validate identity
+  - Locate all sensitive information
+  - Separate VLANs
+  - Ensure authorized systems can communicate
+element151:
+  name: Application-Layer Encryption
+  requirements:
+  - Validate identity
+  - Use a secondary authentication mechanism
+  - Access to the data storage device(s)
+  - Ensure authentication is enforced
+element152:
+  name: Image Scanning
+  requirements:
+  - Amazon ECR
+  - Image Scanning
+  - Vulnerability Scanning
+  - Image Scanning Configuration
+  - Image Scanning Settings
+element153:
+  name: Amazon ECR Identity-Based Policies
+  requirements:
+  - Allow actions and resources
+  - Conditions
+  - Specific actions
+  - Allow creation of repositories
+element154:
+  name: Condition Keys
+  requirements:
+  - aws:ResourceTag
+  - ecr:ResourceTag
+  - Restrict Administrator Privileges to Dedicated Administrator Accounts
+element155:
+  name: Administrative Activities
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element156:
+  name: Container Registries
+  requirements:
+  - Allowlist Authorized Software
+  - Securely Store Master Images
+  - Only Allow Access to Authorized Cloud Storage or Email Providers
+  - Use dedicated EKS Service Accounts (Automated)
+element157:
+  name: AWS EKS Key Management Service
+  requirements:
+  - Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed
+    in AWS KMS (Manual)
+  - Enable the encryption provider support during EKS cluster creation
+  - Use AWS Key Management Service (KMS) keys to provide envelope encryption of
+element158:
+  name: Kubernetes Secrets
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element159:
+  name: Endpoint Private Access
+  requirements:
+  - Enable Private Endpoint Access
+  - Disable Public Access
+  - Prevent accidental blocking of external access
+  - Ensure all desired networks are on the allowlist
+  - Prevent inadvertently blocking external access to the cluster's control plane
+element160:
+  name: Private Endpoint
+  requirements:
+  - Private endpoint access
+  - Enable private endpoint access
+  - Ensure authentication is enforced
+element161:
+  name: Cluster Name
+  requirements:
+  - Export CLUSTER_NAME
+  - Check for the following is True
+  - AWS Eks describe-addon --cluster-name ${CLUSTER_NAME} --addon-name vpc-cni --query
+    addon.configurationValues
+element162:
+  name: Calico
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element163:
+  name: Role-Based Access Control
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element164:
+  name: Admission of Containers
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+  - AllowPrivilegeEscalation
+  - Minimize admission of containers with
+  - enable audit Logs
+  - Ensure audit logs are collected and managed
+  - Ensure that all Namespaces have Network Policies
+  - Minimize the admission of containers wishing to share
+  - Minimize the admission of containers with
+  - allowPrivilegeEscalation
+  - Enable audit Logs
+  - Ensure that the kubeconfig file permissions are set to
+  - 644 or more restrictive
+  - Ensure that the kubelet kubeconfig file ownership is set to
+  - root:root
+element165:
+  name: Ensure that the kubelet configuration file has permissions
+  requirements:
+  - set to 644 or more restrictive
+  - 
+  - 3.1.4
+  - 3.2.1
+  - 3.1.2
+  - 3.1.3
+  - 3.2.5
+  - 3.2.6
+  - 3.2.7
+  - 3.2.8
+element166:
+  name: Ensure that the --rotate-certificates argument is not
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element167:
+  name: Host Process ID Namespace
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element168:
+  name: Cluster Endpoint Access
+  requirements:
+  - Private Endpoint Enabled
+  - Public Access Disabled
+  - Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled
+element169:
+  name: Ensure clusters are created with Private Nodes
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced
+element170:
+  name: KDE Dictionary
+  requirements:
+  - Validate identity
+  - Use two independent factors
+  - Ensure authentication is enforced

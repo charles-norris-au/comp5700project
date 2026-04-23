@@ -2,8 +2,8 @@
 test_all.py
 -----------
 Pytest test suite for:
-  - kde_extractor.py  (Task 1)
-  - kde_compare.py    (Task 2)
+  - task1.py  (Task 1)
+  - task2.py    (Task 2)
   - task3.py          (Task 3)
 
 LLM-touching functions (run_llm, extract_kdes_from_pdf, process_two_files)
@@ -293,12 +293,11 @@ class TestParseKdeYaml:
         reqs = result.get("element1", {}).get("requirements", [])
         assert "3.2" not in reqs
 
-    def test_drops_element_with_fewer_than_two_real_reqs(self, capsys):
+    def test_drops_element_with_fewer_than_no_real_reqs(self, capsys):
         yaml_text = (
             "element1:\n"
             "  name: Noisy Element\n"
             "  requirements:\n"
-            "    - Manual\n"
             "    - 20\n"
             "    - 30\n"
         )

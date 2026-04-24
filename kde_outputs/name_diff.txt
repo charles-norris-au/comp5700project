@@ -1,0 +1,179 @@
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  API Configz Endpoint
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  API Configz Endpoint Status
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  AWS
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  AWS Control Plane Security
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Access Control
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Access the information.
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Administrative Account Token
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Audit: First, SSH to the relevant worker node: To check to see if the Kubelet Service is running: sudo systemctl status kubelet
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Authentication and Authorization Fields
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Avoid use of system:masters group (Manual)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Browsing, Email, and Productivity Suite Use
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  CIS Critical Security Controls®
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  CIS Recommendation
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Cluster Networking
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Configuration File
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Configuration File Verification
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Configure Data Access Control Lists
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Container-optimized OSes
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Create Pod Access
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Default Value: See the AWS EKS documentation for the default value.
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Enable audit Logs (Manual)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Encryption at Rest
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that default service accounts are not actively used.
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that the --authorization-mode argument is not set to
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that the --read-only-port is disabled (Manual)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that the RotateKubeletServerCertificate argument
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that the kubelet configuration file has
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ensure that the kubelet configuration file ownership is set to root:root
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Fargate Profile
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Fargate for Untrusted Workloads
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Firewall
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  HOSTNAME_PORT and NODE_NAME
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Host-based Firewalls or Port Filtering
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  IAM Roles for Service Accounts
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Identity and Access Management (IAM)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Implement and Manage a Firewall on Servers
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Kubelet Configuration Details
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Kubelet Node Configuration
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Kubelet Node Resolution
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Kubernetes API
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Limit Access to Script Tools
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Maintain and Enforce Network-Based URL Filters
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Manage Create Access
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Minimize Container Registries
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Minimize Container Registries to only those approved
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Minimize cluster access to read-only for Amazon ECR
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Network-Based URL Filters
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Perform with this service.
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Pod Security Policies
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  PodSecurityPolicies
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Prefer using dedicated EKS Service Accounts (Manual)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Principle of Least Privilege
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Protect Kernel Defaults
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Recommendation
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Remediation: Run the following command (using the config file location identified in the Audit step)
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Restrict Administrator Privileges to Dedicated Administrator Accounts
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Role Trust Policy for IRA to the Service Account Name
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Role Trust Policy for IRSA to the Service Account Name
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Scan On Push
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Secondary Account for Elevated Activities
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Securely Store Master Images
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Security Context
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Security Controls
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Security Recommendations
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Sensitive Data
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Ticket
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Use Dedicated Administrative Accounts
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Verify Configuration
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Wildcards
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  Worker Node Configuration Files
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  cluster-admin
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  generic-garbage-collector
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  iptables management solution
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  kubectl delete clusterrolebinding
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  kubectl get psp <name> -o=jsonpath='{.spec.hostIPC}'
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  kubelet configuration
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  kubelet server certificate rotation
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  namespace-controller
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  persistent-volume-binder
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  security controls
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  serviceAccount
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  streamingConnectionIdleTimeout
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  system:controllers
+PRESENT-IN-input1-cis-r1_kdes.yaml  ABSENT-IN-input2-cis-r2_kdes.yaml  system:masters
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  9.4 Encrypt All Sensitive Information in Transit
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  API
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  API Server Audit Log
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Control Plane Logs
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Describe-Cluster
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Detective
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Key Controls
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Key Management Service
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS References
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AWS EKS Update-Cluster-Config
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Access Control Lists
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Administrative Activities
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Administrative Activities and not internet browsing, email, or similar activities.
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Admission of Containers
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Allow Administrative Account Access
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  AllowPrivilegeEscalation
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Amazon ECR Identity-Based Policies
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Amazon EKS Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Anonymous Authentication
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Application-Layer Encryption
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Authentication
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Authenticator Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Benchmark
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Benchmarks
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  CIS Benchmarks™
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  CIS Benchmark™
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  CNI Plugin
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Calico
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster Access
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster Access Manager API
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster Endpoint Access
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster Name
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Cluster from accidental leaks of master certificates from your company's
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Condition Keys
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Container Registries
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Control Plane Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Controller Manager Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Controls
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Controls version
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Encrypt Sensitive Data in Transit
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure audit logs are collected and managed
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure clusters are created with Private Nodes
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure that the --rotate-certificates argument is not
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Ensure that the kubelet configuration file has permissions
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Enterprise Assets
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Establish and Maintain a Secure Configuration Process
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  HTTPS Load Balancers
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Host Process ID Namespace
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  HostNetwork Restriction
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Image Registry and Image Scanning
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Image Scanning
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Image Vulnerability Scanning
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Implement Secrets Management
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  KDE Dictionary
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Kubernetes Secrets
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Kubernetes Service Account
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Maintain Secure Images
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Master Node
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Minimize admission of containers wishing to share
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Minimize admission of containers with
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Minimize wildcard use in Roles and ClusterRoles
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Network Policy
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Network Segmentation
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Permissions to maintain the integrity of the file.
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Pod Security Policy
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Private Endpoint
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  RBAC Access Control
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Recommendations
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Region Code Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Remediation Procedure
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Role-Based Access Control
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Scheduler Logging
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Supplementary information
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Transport Layer Security (TLS) and Open Secure Shell (OpenSSH)
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  Use Standard Hardening Configuration Templates
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  VPC-CNI
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  default
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  establish and maintain dedicated computing resources for all administrative work
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kube-node-lease
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kube-public
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kube-system
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubeconfig file permissions
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubectl get nodes
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubelet Configuration File
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubelet configuration file ownership
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubelet configuration file permissions
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  kubelet-idle-timeout
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  location of the configuration file, provided with the --config argument, as this will be
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  permissions to maintain the integrity of the file.
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  show the namespace and name of each matching pod.
+ABSENT-IN-input1-cis-r1_kdes.yaml  PRESENT-IN-input2-cis-r2_kdes.yaml  v8

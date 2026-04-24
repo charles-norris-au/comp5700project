@@ -289,12 +289,13 @@ def _parse_kubescape_json(json_path: str) -> pd.DataFrame:
     resource_paths: dict[str, str] = {}
     for res in data.get("resources", []):
         rid  = res.get("resourceID", "")
-        ref  = res.get("object", {})
-        # Try to extract a meaningful file path from the resource metadata
+        ref  = res.get("object") or {}
+        # Guard every chained .get() against None values in the JSON
+        metadata    = ref.get("metadata") or {}
+        annotations = metadata.get("annotations") or {}
         path = (
-            ref.get("metadata", {}).get("annotations", {})
-               .get("config.kubernetes.io/origin", "")
-            or ref.get("metadata", {}).get("name", rid)
+            annotations.get("config.kubernetes.io/origin", "")
+            or metadata.get("name", rid)
         )
         resource_paths[rid] = path or rid
 
@@ -307,10 +308,14 @@ def _parse_kubescape_json(json_path: str) -> pd.DataFrame:
     rows = []
     for ctrl_id, ctrl in controls_s.items():
         name     = ctrl.get("name", ctrl_id)
-        severity = (
-            ctrl.get("scoreFactor", {}) if isinstance(ctrl.get("scoreFactor"), str)
-            else ctrl.get("severity", {}).get("severity", "Unknown")
-        )
+        severity_raw = ctrl.get("severity")
+        if isinstance(severity_raw, str):
+            severity = severity_raw
+        elif isinstance(severity_raw, dict):
+            severity = severity_raw.get("severity", "Unknown")
+        else:
+            score_factor = ctrl.get("scoreFactor")
+            severity = str(score_factor) if score_factor is not None else "Unknown"
         counters  = ctrl.get("resourceCounters", {})
         failed    = counters.get("failedResources",  0)
         passed    = counters.get("passedResources",  0)
@@ -362,6 +367,9 @@ def run_kubescape(controls_path: str, zip_path: str) -> pd.DataFrame:
     If controls_path contains only NO_DIFF_SENTINEL, Kubescape is run with
     all available controls.  Otherwise, only the listed control IDs are used.
 
+    Kubescape cannot scan a ZIP archive directly — the archive is extracted
+    to a temporary directory first and Kubescape is pointed at that directory.
+
     Args:
         controls_path: Path to the TEXT file produced by
                        map_differences_to_kubescape_controls().
@@ -372,6 +380,8 @@ def run_kubescape(controls_path: str, zip_path: str) -> pd.DataFrame:
             FilePath, Severity, Control name, Failed resources,
             All Resources, Compliance score
     """
+    import zipfile
+
     if not os.path.isfile(zip_path):
         raise FileNotFoundError(f"Manifest ZIP not found: '{zip_path}'")
 
@@ -381,6 +391,15 @@ def run_kubescape(controls_path: str, zip_path: str) -> pd.DataFrame:
     run_all = (content == NO_DIFF_SENTINEL)
 
     with tempfile.TemporaryDirectory() as tmpdir:
+        # Extract the ZIP so Kubescape can walk the directory tree
+        extract_dir = os.path.join(tmpdir, "manifests")
+        print(f"[run_kubescape] Extracting {zip_path} → {extract_dir}")
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            # Skip macOS metadata entries (files inside __MACOSX/)
+            for member in zf.namelist():
+                if not member.startswith("__MACOSX") and not os.path.basename(member).startswith("._"):
+                    zf.extract(member, extract_dir)
+
         json_out = os.path.join(tmpdir, "results.json")
 
         if run_all:
@@ -388,7 +407,7 @@ def run_kubescape(controls_path: str, zip_path: str) -> pd.DataFrame:
                 "kubescape", "scan",
                 "--format", "json",
                 "--output", json_out,
-                zip_path,
+                extract_dir,
             ]
             print("[run_kubescape] Running Kubescape on ALL controls …")
         else:
@@ -398,7 +417,7 @@ def run_kubescape(controls_path: str, zip_path: str) -> pd.DataFrame:
                 "kubescape", "scan", "control", controls_arg,
                 "--format", "json",
                 "--output", json_out,
-                zip_path,
+                extract_dir,
             ]
             print(f"[run_kubescape] Running Kubescape on controls: {controls_arg} …")
 
